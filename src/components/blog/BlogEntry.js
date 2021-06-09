@@ -5,10 +5,10 @@ import PostContainer from './post/PostContainer.js';
 function BlogEntry(){
     let post = useParams().post;
     let date = useParams().date;
-    let post_route = date + "/" + post
-    if (PostContainer[date] != undefined){
+    
+    if (PostContainer[date] !== undefined){
       let Component = PostContainer[date][post];
-      if (Component != undefined)
+      if (Component !== undefined)
         return (<Component />);
       return (<div>Nothing here {date}/{post}</div>);
     }else{

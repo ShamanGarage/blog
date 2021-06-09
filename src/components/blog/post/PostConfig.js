@@ -1,4 +1,4 @@
-export default [
+const postConfig = [
   {
     year: 2021,
     name:'T1',
@@ -14,3 +14,6 @@ export default [
     name:'T3',
     path:'./1998/T3'
   }];
+
+
+export default postConfig
