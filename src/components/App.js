@@ -2,8 +2,8 @@ import './App.css';
 import React from 'react';
 import { Route, Switch, Link } from "react-router-dom";
 
+import BlogEntry from "./BlogEntry"
 
-import BlogEntry from "./blog/BlogEntry"
 function App() {
       return (
         <div className="App">
