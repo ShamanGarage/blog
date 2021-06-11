@@ -1,6 +1,11 @@
+body{
+  font-family: Atkinson, Roboto !important;
+}
+
+
 .nav-btn{
   border-radius: 100%;
-  border: 2px solid black;
+  border: 1px solid black;
   height: 80px;
   width: 80px;
   display: inline-flex;
@@ -8,31 +13,55 @@
   align-items: center;
 }
 
+.nav-btn.close{
+  height: 40px;
+  width: 40px;
+}
+
 .nav-btn:hover{
   background-color: black;
 }
 
-.nav-btn p{
+.nav-btn i{
   color: black;
 }
 
-.nav-btn:hover p{
+.nav-btn:hover i{
   color: white;
 }
 
 nav a{
   text-decoration: none;
-  margin: 10px
+  margin: 10px;
+
 }
 
 nav{
     margin: 10px;
     display: flex;
-    justify-content: flex-end;
 }
 
 .content{
   max-width: calc(min(500px, 95vw));
   margin-left: auto;
   margin-right: auto;
+}
+
+.content a{
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px dotted black;
+}
+
+.content a:hover{
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  border-bottom: 1px dotted black;
+}
+
+
+p::selection, a::selection, span::selection, h1::selection, h2::selection, h3::selection{
+  color: white;
+  background-color: black;
 }
