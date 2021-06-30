@@ -31,7 +31,7 @@ const useFetchJSON = url => {
       let json = {}
       try{
         json = await response.json();
-      }catch{
+      }catch (err){
         json = {"title": "Nada por aquí..."}
       }
 
