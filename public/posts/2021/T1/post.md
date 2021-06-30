@@ -1,7 +1,5 @@
-## holaaaaa
+## Blog usando MarkDown
 
-esto es un md
+Esto es una prueba de blog usando markdown servido a través de Github Pages
 
-![Universe Image](posts/2021/T1/image.png)
-
-se ve la imagen?
+![The Github Logo](posts/2021/T1/image.png)
