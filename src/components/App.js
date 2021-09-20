@@ -3,15 +3,19 @@ import './App.css';
 import React from 'react';
 import { Route, Switch, Link } from "react-router-dom";
 import Helmet from "react-helmet";
-import BlogEntry from "./BlogEntry"
+import BlogEntry from "./views/BlogEntry/BlogEntry"
+import Home from "./views/Home/Home"
+
+import Entries from "./../conf/entries.json"
 
 function App() {
+
       return (
         <div className="App">
         <Helmet>
           <title>Shamans' Blog</title>
           <meta name="description" content="El fantástico blog de tecnología creativa" />
-          <meta name="keywords" cpntent="arte cultura tecnología código" />
+          <meta name="keywords" content="arte cultura tecnología código" />
         </Helmet>
           <div>
             <nav>
@@ -32,8 +36,7 @@ function App() {
           <div className="content">
             <Switch>
             <Route exact path="/">
-              <h1>Home</h1><br/>
-              <Link to="/2021/T1">¿Esto funciona?</Link>
+              <Home entries={Entries}/>
             </Route>
             <Route exact path="/:date/:post/">
               <BlogEntry/>

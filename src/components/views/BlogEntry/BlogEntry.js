@@ -59,6 +59,8 @@ function BlogEntry(){
           <meta name="keywords" cpntent={meta.keywords} />
         </Helmet>: null}
       <ReactMarkdown className="article"children={text ? text : "Cargando..."} />
+      <p>{meta?  meta.author : ""}</p>
+      <p>{meta? meta.date: ""}</p>
       </div>
     )
 }
